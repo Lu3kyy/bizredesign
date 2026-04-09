@@ -1,21 +1,34 @@
+'use client'
 import { Navbar, NavbarBrand, NavbarCollapse, NavbarLink, NavbarToggle } from 'flowbite-react'
-import React from 'react'
+import { usePathname, useRouter } from 'next/navigation'
 
 const TopNavbar = () => {
+  const currentPath = usePathname();
+  const { push } = useRouter();
+
+  const handleRedirect = (path: string) => {
+    push(path);
+  }
+
+  const isActive = (path: string) => {
+    console.log(path)
+    return currentPath === path;
+  }
+
   return (
     <div>
-        <Navbar fluid rounded className='!bg-[#7a1f2a]'>
-                  <NavbarBrand  href="https://flowbite-react.com">
-                    <img src="/assets/juicy-burger-icon.png" className="ps-15" alt="Flowbite React Logo" />
+      <Navbar fluid rounded className='!bg-[#7a1f2a]'>
+        <NavbarBrand>
+          <img src="/assets/juicy-burger-icon.png" className="ps-15" alt="Flowbite React Logo" />
 
-                  </NavbarBrand>
-                  <NavbarToggle />
-                  <NavbarCollapse>
-                    <NavbarLink className='pe-5' href="#" active>HOME</NavbarLink>
-                    <NavbarLink className='pe-5' href="#">MENU</NavbarLink>
-                    <NavbarLink className='pe-5' href="#">CONTACT</NavbarLink>
-                  </NavbarCollapse>
-                </Navbar>
+        </NavbarBrand>
+        <NavbarToggle />
+        <NavbarCollapse>
+          <NavbarLink className={isActive('/') ? "active me-5" : "me-5 "} onClick={() => handleRedirect("/")}>HOME</NavbarLink>
+          <NavbarLink className={isActive("/pages/menu") ? "active me-5" : "me-5 "} onClick={() => handleRedirect("/pages/menu")} >MENU</NavbarLink>
+          <NavbarLink className={isActive("/pages/contact") ? "active me-5" : "me-5 "} onClick={() => handleRedirect("/pages/contact")}>CONTACT</NavbarLink>
+        </NavbarCollapse>
+      </Navbar>
     </div>
   )
 }
