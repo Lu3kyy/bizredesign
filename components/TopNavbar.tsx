@@ -11,7 +11,7 @@ const TopNavbar = () => {
   }
 
   const isActive = (path: string) => {
-    console.log(path)
+    console.log(path + " : " + currentPath)
     return currentPath === path;
   }
 
