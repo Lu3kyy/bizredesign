@@ -1,8 +1,10 @@
-import React from 'react'
+import MenuCatalog from '@/components/MenuCatalog'
 
 const page = () => {
   return (
-    <div className='min-h-screen'>menu!!!</div>
+    <main className="flex-1 bg-[#fcf8f3]">
+      <MenuCatalog />
+    </main>
   )
 }
 
