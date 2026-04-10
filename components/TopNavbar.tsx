@@ -17,7 +17,7 @@ const TopNavbar = () => {
 
   return (
     <div>
-      <Navbar fluid rounded className='!bg-[#7a1f2a]'>
+      <Navbar fluid className='!bg-[#7a1f2a]'>
         <NavbarBrand>
           <img src="/assets/juicy-burger-icon.png" className="ps-15" alt="Flowbite React Logo" />
 

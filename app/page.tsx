@@ -1,3 +1,4 @@
+import BurgerCarousel from "@/components/BurgerCarousel";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
         <p>THE JUICE IS LOOSE</p>
       </div>
       </div>
+
     </div>
   );
 }
