@@ -49,44 +49,39 @@
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
 }
-.active {
-  color: white;
-  font-weight: 400;
-}
-
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
+  --background: #fcf8f3;
+  --foreground: #21161a;
+  --card: #ffffff;
+  --card-foreground: #21161a;
+  --popover: #ffffff;
+  --popover-foreground: #21161a;
+  --primary: #64132a;
+  --primary-foreground: #fff8f3;
+  --secondary: #efe5dd;
+  --secondary-foreground: #29191d;
+  --muted: #f5eee8;
+  --muted-foreground: #6d5b60;
+  --accent: #ead6c7;
+  --accent-foreground: #2b181c;
+  --destructive: #b74457;
+  --border: #eadfd6;
+  --input: #eadfd6;
+  --ring: #8f2947;
+  --chart-1: #d08b63;
+  --chart-2: #8f2947;
+  --chart-3: #f0cf84;
+  --chart-4: #a8573f;
+  --chart-5: #53343d;
   --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar: #fcf8f3;
+  --sidebar-foreground: #21161a;
+  --sidebar-primary: #64132a;
+  --sidebar-primary-foreground: #fff8f3;
+  --sidebar-accent: #f5eee8;
+  --sidebar-accent-foreground: #21161a;
+  --sidebar-border: #eadfd6;
+  --sidebar-ring: #8f2947;
 }
 
 .dark {
@@ -129,6 +124,7 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-image: radial-gradient(circle at top, rgba(130, 27, 57, 0.08), transparent 30%);
   }
   html {
     @apply font-sans;

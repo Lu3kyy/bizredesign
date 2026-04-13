@@ -1,13 +1,12 @@
 import ContactContent from '@/components/ContactContent'
-import { Button, Label, TextInput } from 'flowbite-react'
 import React from 'react'
 
 const page = () => {
     return (
         <div>
 
-            <div className='min-h-60 mt-2 bg-[#7a1f2a]'>
-                <h1 className='pt-15 text-center text-8xl font-bold'>Get In Touch</h1>
+            <div className='min-h-60 bg-[linear-gradient(180deg,#5d1328_0%,#370a18_100%)]'>
+                <h1 className='pt-15 text-center font-heading text-7xl font-semibold tracking-tight text-white md:text-8xl'>Get In Touch</h1>
             </div>
             <ContactContent />
         
