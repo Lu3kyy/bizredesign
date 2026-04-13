@@ -1,4 +1,4 @@
-## Daniel and Lucas
+## Daniel H and Lucas G
 
 ## Juicy Burger!
 
@@ -7,6 +7,5 @@
 ## Link to Figma
 https://www.figma.com/design/SmbmrMwQf2YeqSkDxLQDed/Untitled?node-id=0-1&p=f&t=UwNKcExcOBkACUk3-0
 
-Contact page: responsive!
 
 
