@@ -24,7 +24,7 @@ const MenuCatalog = () => {
     <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
       <div className="grid gap-8 lg:grid-cols-[180px_minmax(0,1fr)] lg:items-start">
         <aside className="lg:sticky lg:top-24">
-          <nav className="flex gap-2 overflow-x-auto pb-2 lg:flex-col lg:gap-1 lg:overflow-visible lg:pb-0">
+          <nav className="flex flex-wrap gap-2 overflow-x-auto pb-2 lg:flex-col lg:gap-1 lg:overflow-visible lg:pb-0">
             {menuCategories.map((category) => {
               const isActive = category.id === activeCategory
 
@@ -34,7 +34,7 @@ const MenuCatalog = () => {
                   type="button"
                   onClick={() => setActiveCategory(category.id)}
                   className={cn(
-                    "rounded-xl px-4 py-3 text-left font-heading text-3xl leading-none tracking-tight text-[#2d2020] transition-colors sm:text-[2rem] lg:px-3 lg:py-2",
+                    "rounded-xl px-4 py-3 text-left font-heading text-xl md:text-3xl leading-none tracking-tight text-[#2d2020] transition-colors sm:text-[2rem] lg:px-3 lg:py-2",
                     isActive
                       ? "bg-[#f4ebe4] text-[#5f1328]"
                       : "text-[#2d2020] hover:bg-[#f8f1ea] hover:text-[#5f1328]"
@@ -49,7 +49,7 @@ const MenuCatalog = () => {
 
         <div className="space-y-5">
           <div className="space-y-2 px-1">
-            <h1 className="font-heading text-5xl tracking-tight text-[#2c161b] sm:text-6xl">
+            <h1 className="font-heading text-4xl tracking-tight text-[#2c161b] sm:text-6xl">
               {currentCategory.label}
             </h1>
             <p className="max-w-2xl text-sm leading-6 text-[#6e5b5f] sm:text-base">
@@ -58,11 +58,11 @@ const MenuCatalog = () => {
             </p>
           </div>
 
-          <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {visibleItems.map((item) => (
               <Card
                 key={item.id}
-                className="flex h-full overflow-hidden rounded-2xl border border-black/8 bg-white py-0 shadow-[0_14px_32px_rgba(0,0,0,0.08)]"
+                className="flex h-full mx-5 sm:mx-0 overflow-hidden rounded-2xl border border-black/8 bg-white py-0 shadow-[0_14px_32px_rgba(0,0,0,0.08)]"
               >
                 <div className="relative aspect-[4/3] overflow-hidden border-b border-black/6 bg-[#f7f1eb]">
                   <Image

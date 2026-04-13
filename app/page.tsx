@@ -28,7 +28,7 @@ export default function Home() {
             </p>
             <Button
               asChild
-              className="mt-6 h-11 rounded-lg bg-[#6b1730] px-6 font-semibold tracking-wide text-white hover:bg-[#541124]"
+              className="mt-27 h-11 rounded-lg bg-[#6b1730] px-6 font-semibold tracking-wide text-white hover:bg-[#541124]"
             >
               <Link href="/pages/menu">ORDER NOW</Link>
             </Button>
@@ -55,7 +55,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="max-w-xl text-lg leading-8 text-white/92 sm:text-xl">
+            <div className="max-w-xl text-4 leading-8 text-white/92 sm:text-xl">
               <p>
                 At Juicy Burger, we&apos;re all about serving up the juiciest,
                 most flavorful burgers made from high-quality ingredients. From
